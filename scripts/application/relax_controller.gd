@@ -48,6 +48,7 @@ func place(slot: int, origin: Vector2i) -> Dictionary:
 	_save_message = ""
 	if _session.finished():
 		_machine.transition(SessionStateMachine.State.GAME_OVER)
+	result["placement_origin"] = origin # Confirmed presentation event; not persisted game state.
 	move_completed.emit(result)
 	changed.emit()
 	return result

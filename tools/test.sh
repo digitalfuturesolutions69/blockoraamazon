@@ -24,6 +24,7 @@ run_godot --script tests/integration/run_input_lifecycle_tests.gd
 run_godot --script tests/integration/run_audio_tests.gd
 run_godot --script tests/integration/run_responsive_layout_tests.gd
 run_godot --script tests/integration/run_drag_tests.gd
+run_godot --script tests/integration/run_visual_tests.gd
 run_godot --script tests/simulation/run_simulations.gd -- --sessions=100
 run_godot --script tests/simulation/run_fairness.gd -- --sessions=100
 run_godot --quit-after 2
